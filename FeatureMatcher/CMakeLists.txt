@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( OpenCV_Video_Test )
+find_package( OpenCV REQUIRED )
+add_executable( VideoShow VideoShow.cpp )
+target_link_libraries( VideoShow ${OpenCV_LIBS} )
